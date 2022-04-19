@@ -83,7 +83,8 @@ main p {
 }
 
 .cards .card {
-    position: relative
+    position: relative;
+    animation: appear 1s;
 }
 
 .card h2 {
@@ -99,4 +100,29 @@ main p {
     font-size: 2rem;
     line-height: 3.4rem;
     letter-spacing: 5%;
+
+    animation: appearH2 2.5s;
 }
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        margin-top: 100px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes appearH2 {
+    0% {
+        margin-top: -8rem;
+        opacity: 0;
+    } 100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
