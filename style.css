@@ -58,6 +58,10 @@ body::before {
     color: var(--header-color);
 }
 
+.logo p {
+    display: none;
+}
+
 main {
     padding: 1.4rem 3.2rem 6rem 3.2rem;
 }
@@ -84,7 +88,7 @@ main p {
 
 .cards .card {
     position: relative;
-    animation: appear 1s;
+    animation: appear .5s;
 }
 
 .card h2 {
@@ -104,11 +108,15 @@ main p {
     animation: appearH2 2.5s;
 }
 
+footer {
+    display: none;
+}
+
 @keyframes appear {
     0% {
         opacity: 0;
         margin-top: 100px;
-    }
+    }   
 
     100% {
         opacity: 1;
@@ -124,5 +132,104 @@ main p {
         margin-top: 0;
         opacity: 1;
     }
+}
+
+@media (min-width: 768px) {
+
+    body {
+        min-width: 1400px;
+    }
+
+    main p {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body {
+        width: 100%;
+        margin-bottom: 55rem;
+    }
+
+    body::before {
+        content: '';
+        background: var(--header-background);
+        width: 37.7rem;
+        height: 900px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .logo h1 {
+        width: 37.7rem;
+    }
+
+    .logo p {
+        display: block;
+        width: 27.5rem;
+        font-size: 2.4rem;
+        line-height: 2rem;
+        margin-top: 3.2rem;
+        color: #FFF;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .cards{
+        margin-top: 6.4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cards h2 {
+        display: none;
+    }
+
+    .card img {
+        width: 100%;
+        transition: width 2s;
+    }
+
+    .card img:hover {
+        width: 35rem;
+    }
+
+    .card-4 {
+        margin-top: -20rem;
+    }
+
+    footer {
+        text-align: center;
+        display: block;
+        font-size: 14px;
+        line-height: 28px;
+        color: #4A4E69;
+        width: 600px;
+
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    footer a {
+        font-weight: bold;
+        color: #4A4E69;
+        text-decoration: none;
+    }
+
+
 }
 
