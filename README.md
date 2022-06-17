@@ -28,11 +28,19 @@
 On this page we take into account Mobile first, along with the desktop version!
 and the use of animations and transitions.
 
+<div align="center">
+
 ### Version mobile
+
+![Screenshot_11](https://user-images.githubusercontent.com/77352309/174395002-a8541ca3-06ed-4864-a740-889f9a2a8311.png)
 
 
 ### Version desktop
 
+![Screenshot_10](https://user-images.githubusercontent.com/77352309/174394989-0659b39e-99c2-48d0-ad14-43f18a555c35.png)
+
+</div>	
+	
 ## Tech Stack
 <img src="https://img.shields.io/badge/Css3-05122A?style=flat&logo=css3" alt="css3 Badge" height="25">&nbsp;
 <img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;
